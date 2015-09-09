@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Staffino iframe - fixed width</title>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="../dist/staffino-iframe.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#staffino-iframe-container').staffino({
+                venue: 'd6ddb4d9ac634a9a9ec2280ea6b20ee5',
+                locale: 'sk',
+                width: 540
+            });
+        });
+    </script>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            background-color: palegreen;
+        }
+        iframe {
+            display: block;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="staffino-iframe-container"></div>
+</body>
+</html>
